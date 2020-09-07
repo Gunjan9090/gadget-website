@@ -1,87 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	<script >
-		alert("This is The products page");
-
-		var a = 40;
-		var b =20;
-
-		// if(a>b){
-
-		// 	//alert("A is Greater");
-		// 	alert("Value of A : " + a);
-		// }else{
-
-		// 	//alert ("B is Greater");
-		// 	alert("Value of B : " + b);
-		// }
-        
-		
+	<title>Products</title>
 
 
-
-
-
-	</script>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
 <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
-<style>
-*{
-  padding: 0px;
-  margin: 0px;
- }
-.a{	background-color: #f1048780;
-    color: #6a4747;
-  font-family: 'Merienda One', cursive;}
- .f{
- 	padding: 5px;
- }
-.dropdown:hover>.dropdown-menu {
-        display: block;
-          }
 
-        .dropdown>.dropdown-toggle:active {
-  /*Without this, clicking will make it sticky*/
-             pointer-events: none;
-             }
-.er{
-	color: deeppink;
-    text-decoration: underline;
-}
-.u{color: deeppink;
-	font-family: 'Merienda One', cursive;}
+<link rel="stylesheet" type="text/css" href="css/products.css">
 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
-</style>
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha38"></script>
+<link rel="stylesheet" type="text/css" href="js/index.js">
 </head>
-<body  style="background-color: black">
-	<div class="container-fluid"><!--container fluid start-->
+<body onload="myFunction()">
+  <div id="loading"></div>
+	<div class="container-fluid" id="top"><!--container fluid start-->
 		<nav class="navbar navbar-expand-sm navbar-dark  fixed-top a"><!-- nav baar start-->
 		<div class="container"><!--container start-->
 
 		<a href="" class="navbar-brand"><img src ="image/asuslogo.png"  width="65px;"></a>
-		  <button class="navbar-toggler" data-toggle="collapse" data-target="#a">
+		  <button class="navbar-toggler dropdown-toggle" data-toggle="collapse" data-target="#a">
 			<span class="navbar-toggler-icon"></span>
      	  </button>
          <div class="collapse navbar-collapse" id="a"><!--collapse navbar start-->
 		  	        <ul class="navbar-nav ml-auto" >
 			        <li class="nav-item">
-	<a href="products.html" class="nav-link ">PRODUCTS</a>
-			     <center>  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="#">Action</a>
-    <a class="dropdown-item" href="#">Another action</a>
-    <a class="dropdown-item" href="#">Something else here</a>
-  </div></center> </li>
+						<a href="products.html" class="nav-link ">PRODUCTS</a>
+					</li>
 			         <li class="nav-item">
 				<a href="offers.html" class="nav-link">OFFERS</a></li>
 				<li class="nav-item">
@@ -99,111 +56,142 @@
 
 <!--next start-->
 <br><br><br>
-<center><h1 style="font-family: 'Merienda One', cursive;color: deeppink;">PRODUCTS</h1></center>
+
+<center><h1 class="u">PRODUCTS</h1></center>
 <div class="container"><!--container -fluid start-->
 	<div class="row"><!--row start-->
-		<div class="col-md 3 f u" > <center><img src="image/a.jpg" style="width: 100%;height: 250px;padding: 5px;">
-			<h4>Asus Laptop</h4>
-			<p>Price:34000/-</p>
-            <button class="btn er">Read more</button>
+		<div class="col-md 3 f u" > 
+			<center><img src="image/11.jpg" class="images">
+			<h4>Asus X509FA-EJ371TS Standard Laptop</h4>
+			<p>₹34,599/-</p>
+            <button class="btn er"><a  class="u" href="https://www.reliancedigital.in/asus-x509fa-ej371ts-standard-laptop-intel-core-i3-8145u-4-gb-512-gb-ssd-intel-uhd-graphics-windows-10-home-full-hd-39-6-cm-15-6-inch-/p/491838279?gclid=CjwKCAjw1ej5BRBhEiwAfHyh1FwlAcfRRGXfzqLkxzykVHVTruO20X28Yxq4nTK6vYxqWu_XsGcFCxoCVGYQAvD_BwE">Read more </a></button>
 		    </div></center>
 		    <div class="col-md-4 f u">
-		    <center><img src="image/b.jpg"style="width:100%;height: 250px;padding: 5px;">
-            <h4>Asus wireless Laptop</h4>
-			<p>Price:74000/-</p>
-			<button class="btn er">Read more</button>
+		    <center><img src="image/711oluk9fcl._sx466_.jpg" class="images">
+            <h4>Asus Core i3 (4 GB DDR4/1 TB/Windows 10 Home/21.5 Inch Screen) V222UAK-BA084T</h4>
+			<p>₹37,990.00/-</p>
+			<button class="btn er"><a class="u" href="https://www.kharidiye.com/asus-core-i3-4-gb-ddr4-1-tb-windows-10-home-21-5-inch-screen-black-387-mm-x-489-mm-x-51-mm-4-8-kg-v222uak-ba084t.html?___store=hightech_english&___store=hightech_english&gclid=CjwKCAjw1ej5BRBhEiwAfHyh1N1HtBwrtuA5fgBdQC8sSxpovPEv39sqc3DeIWSXnmNM8HPLr4QZMBoC18oQAvD_BwE"> Read more </a></button>
 		    </div></center>
-		<div class="col-md-4 f u"><center><img src="image/h.jpg"style="width: 100%;;height: 250px;padding: 5px;">
-            <h4>Asus
-				ROG STRIX B550-I GAMING | Motherboards | ASUS Global</h4>
-			<p>Price:34000/-</p>
-			<button class="btn er">Read more</button></div></center>
+		<div class="col-md-4 f u">
+			<center><img src="image/91M3DtCeZ-L._SL1500_.jpg"class="images">
+            <h4>ASUS Prime H310M-E LGA1151 (300 Series) DDR4 HDMI VGA mATX Motherboard </h4>
+			<p>₹ 5,350.00/-</p>
+			<button class="btn er"><a class="u" href="https://www.amazon.in/Prime-H310M-LGA1151-Motherboard-PRIME/dp/B07BP9B1NZ/ref=asc_df_B07BP9B1NZ/?tag=googleshopdes-21&linkCode=df0&hvadid=397076847833&hvpos=&hvnetw=g&hvrand=6426741346886583440&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9040198&hvtargid=pla-451496449895&psc=1&ext_vrnc=hi"> Read more </a></button>
+		</div></center>
 	</div><!--row end-->
 	<div class="row"><!--row start-->
-		<div class="col-md 4 f u"><center><img src="image/d.jpg"style="width: 100%;height: 250px;padding: 5px;"><h4>Asus Printer</h4>
-		<p>Price:34000/-</p><button class="btn er">Read more</button>
+		<div class="col-md 4 f u">
+			<center><img src="image/download (2).jpg"class="images">
+			<h4>Brother DCP-L2541DW Multi-Function Monochrome Laser Printer </h4>
+		<p>₹ 19,884.00/-</p>
+		<button class="btn er"><a class="u" href="https://www.amazon.in/dp/B07GLPN3RV/ref=sspa_dk_detail_1?psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzMFVXSTZPRFpGVkhWJmVuY3J5cHRlZElkPUEwNjY0NDA4MzAzN09RVzNRT1pZVCZlbmNyeXB0ZWRBZElkPUEwMTMwMjYyMUNMVURBRDNaU0RUWSZ3aWRnZXROYW1lPXNwX2RldGFpbDImYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl"> Read more </a></button>
 		</div></center>
-		<div class="col-md-4 f u"> <center><img src="image/e.jpg"style="width: 100%;height: 250px;padding: 5px;"><h4>Asus mobile pgone</h4>
-			<p>Price:34000/-</p><button class="btn er">Read more</button></div></center>
-		<div class="col-md-4 f u"> <center><img src="image/f.jpg"style="width: 100%;;height: 250px;padding: 5px;"><h4>ASUS VivoBook 15 X512DA-EJ504T AMD Quad Core Ryzen </h4>
-			<p>Price:34000/-</p><button class="btn er">Read more</button></div></center>
+		<div class="col-md-4 f u"> 
+			<center><img src="image/e.jpg"class="images">
+				<h4>Asus ROG Phone 3</h4>
+				<p>₹ 49,999/-</p>
+				<button class="btn er"><a class="u" href="https://www.asus.com/in/Phone/Gaming-Phone-Products/"> Read more </a></button>
+			</div>
+		</center>
+		<div class="col-md-4 f u">
+		 <center><img src="image/41-4ozC2MWL.jpg"class="images">
+			<h4>Asus VivoBook 15 X512FL-EJ513TS i5 </h4>
+			<p>₹ 64,780.00/-</p>
+			<button class="btn er"><a href="https://www.amazon.in/VivoBook-X512FL-EJ513TS-i5-10210U-15-6%E2%80%B3FHD-International/dp/B08B4W2W8C/ref=asc_df_B08B4W2W8C/?tag=googleshopdes-21&linkCode=df0&hvadid=397009134649&hvpos=&hvnetw=g&hvrand=6528910117425901380&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9040198&hvtargid=pla-921377378786&psc=1&ext_vrnc=hi" class="u"> Read more </a></button>
+		</div></center>
 	</div><!--row end-->
 	<div class="row">
-		<div class="col-md 4 f u"> <center><img src="image/g.jpg"style="width: 100%;height: 250px;padding: 5px;">
-			<h3>Asus Brand new mobile phone</h3>
-			<p>Price:34000/-</p>
-			<button class="btn er">Read more</button></div></center>
-	<div class="col-md 4 f u"> <center><img src="image/j.jpg"style="width: 100%;height:250px;padding: 5px;"><h3>Asus Laptop</h3>
-	<p>Price:34000/-</p><button class="btn er">Read more</button></div></center>
-	<div class="col-md 4 f u"> <center><img src="image/i.jpg"style="width:100%;height: 250px;padding: 5px;"><h3>Asus Laptop charge</h3>
-	<p>Price:900/-</p><button class="btn er">Read more</button></div></center>
+		<div class="col-md 4 f u"> <center><img src="image/71JEcduJrXL._SX679_.jpg"class="images">
+			<h3>ASUS ROG Strix GL10CS-IN063T Gaming Desktop</h3>
+			<p>₹ 61,710.00/-</p>
+			<button class="btn er"><a href="https://www.amazon.in/ASUS-GL10CS-IN063T-Desktop-i5-9400F-Graphics/dp/B07Z51C5ZT/ref=sr_1_2?dchild=1&keywords=asus+phone&qid=1597752786&s=computers&sr=1-2" class="u"> Read more</a></button></div></center>
+	<div class="col-md 4 f u"> 
+		<center><img src="image/81K9Es2DDFL._SX522_.jpg"class="images">
+		<h3>ASUS ZenBook Duo UX481FL-BM039R Core i7 10th Gen</h3>
+	<p>₹ 1,29,859.00/-</p>
+	<button class="btn er"><a href="https://www.amazon.in/ASUS-UX481FL-BM039R-Professional-Graphics-Celestial/dp/B082WZJ1X1/ref=sr_1_4?dchild=1&keywords=asus+lAPTOP+1+lakh&qid=1597754550&s=computers&sr=1-4" class="u">Read more</a></button>
+</div></center>
+	<div class="col-md 4 f u">
+	 <center><img src="image/download (3).jpg"class="images">
+	 	<h3>ASUS ASUS 90W LAPTOP CHARGER AC/DC ADAPTER FOR K52F</h3>
+	<p>₹5,119.00/-</p>
+	<button class="btn er"><a href="https://vlebazaar.in/index.php?route=product/product&product_id=1028&gclid=Cj0KCQjw-O35BRDVARIsAJU5mQWD13FszSZmNrXLJ9ekma89KgMlBD0CJVJleJ-Lq0QkvnEnavH3Ro4aAm-mEALw_wcB" class="u"> Read more</a></button>
+</div></center>
 	</div><!--row end-->
 	<div class="row">
-		<div class="col-md 4 f u"><center><img src="image/c.jpg"style="width: 100%;;height: 250px;padding: 5px;"><h3>Asus tv Laptop</h3>
-			<p>Price:94000/-</p><button class="btn er">Read more</button></div></center>
-		<div class="col-md 4 f u"><center><img src="image/k.jpg"style="width:100%;height: 250px;padding: 5px;"><h3>Asus mobile</h3>
-			<p>Price:44000/-</p><button class="btn er">Read more</button></div></center>
-		<div class="col-md 4 f u"><center><img src="image/l.jpg"style="width: 100%;;height: 250px;padding: 5px;"><h3>Asus mobike phone</h3>
-			<p>Price:38000/-</p><button class="btn er">Read more</button></div></center>
+		<div class="col-md 4 f u">
+			<center><img src="image/03LqUBsLxWzUzqbGeZPmCBX-21.fit_scale.size_1028x578.v_1569547288.jpg"class="images">
+				<h3>Asus Monitor</h3>
+			<p>₹ 27,499.00/-</p>
+			<button class="btn er"><a href="https://www.amazon.in/VG278QR-1920x1080-Compatible-FreeSync-Certified/dp/B07KKBDQCL/ref=sr_1_4?dchild=1&qid=1597768233&refinements=p_89%3AAsus&s=computers&sr=1-4" class="u">Read more</a></button>
+		</div></center>
+		<div class="col-md 4 f u">
+			<center><img src="image/81IxBrYo3fL._SL1500_.jpg" class="images">
+				<h3>ASUS Cerberus Gaming Mouse (Black and Red)</h3>
+			<p>₹ 1,689.00/-</p>
+			<button class="btn er"><a href="https://www.amazon.in/Asus-Cerberus-30502-Gaming-Mouse/dp/B017UBEEDK/ref=asc_df_B017UBEEDK/?tag=googleshopdes-21&linkCode=df0&hvadid=397006051621&hvpos=&hvnetw=g&hvrand=18413579851542617996&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9299430&hvtargid=pla-404919246362&psc=1&ext_vrnc=hi" class="u">Read more</a></button></div></center>
+		<div class="col-md 4 f u">
+			<center><img src="image/51jVNiyhpeL._SL1000_.jpg" class="images">
+			<h3>ASUS TUF Gaming K5 RGB Keyboard</h3>
+			<p>Price:38000/-</p><button class="btn er"><a href="https://www.amazon.in/TUF-K5-Mechanical-Membrane-Programmable/dp/B07L5JJC9X/ref=sr_1_1?dchild=1&keywords=asus+key&qid=1597768574&s=computers&sr=1-1" class="u">Read more</a></button>
+		</div></center>
 	</div>		
 </div><!--container fluid end-->
 </section>
 
 
-<div class="container-fluid" style="background-color:black;color: white;" ><!--footer start-->
+<div class="container-fluid ty" ><!--footer start-->
 	<div class="container" style="background-color:black;">
 		<div class="row">
 	<div class="col-md-3">
 		<br>	<br>	<br>	
-		<h6 style="font-family: 'Merienda One', cursive;">Want More?</h6>
-		<div style="font-family: 'Amatic SC', cursive;
-font-family: 'Merienda One', cursive;">
+		<h6 class="ui ">Want More?</h6>
+		<div class="ui">
 		<br>
 		<h6>ROG</h6>
-		<br>
-<h6> Powered By ASUS</h6><br>
-<h6> Laptops, Desktops & AIOs Offer</h6>
-<br><br><br><br></div>
+		<h6> Powered By ASUS</h6>
+		<h6> Laptops, Desktops & AIOs Offer</h6>
+		<br><br><br><br></div>
 	</div><!--col md 4 end-->
 	<div class="col-md-3">
 		<br><br><br>
-		<h6 style="font-family: 'Merienda One', cursive;">Who We Are?</h6>
-		<div style="font-family: 'Amatic SC', cursive;
-font-family: 'Merienda One', cursive;">
-		<br>
-		<h6>About ASUS</h6>
-<h6>News</h6>
-<h6>Awards</h6>
-<h6>Investor Relations</h6>
-<h6>Careers</h6>
-<h6>ASUS e-Waste Management- Recycle old ASUS products</h6>
-<h6>Press Room</h6>
-		<br></div>
-</div><!--col md 4 end-->
+		<h6 class="ui">Who We Are?</h6>
+		<div class="ui">
+			<br>
+			<h6>About ASUS</h6>
+			<h6>News</h6>
+			<h6>Awards</h6>
+			<h6>Investor Relations</h6>
+			<h6>Careers</h6>
+			<h6>ASUS e-Waste Management- Recycle old ASUS products</h6>
+			<h6>Press Room</h6>
+			<br>
+		</div>
+	</div><!--col md 4 end-->
 	<div class="col-md-3">
 		<br><br><br>
-		<h6 style="font-family: 'Merienda One', cursive;">NEED HELP?</h6>
-		<div style="font-family: 'Amatic SC', cursive;
-font-family: 'Merienda One', cursive;">
-		<br>
-		<h6>Download Product Guide</h6>
-<h6>Contact Us</h6>
-
-<h6>Check Repair Status</h6>
-<h6>Where To Buy (Computer/Mobile)</h6>
-<h6>Check Warranty Status</h6>
-<h6>Find Service Locations</h6>
-<h6>Driver Download</h6>
-<h6>ASUS e-Waste Management- Recycle old ASUS products</h6>
-<h6>Product Registration</h6>
-		<br></div>
+		<h6 class="ui">NEED HELP?</h6>
+		<div class="ui">
+			<br>
+			<h6>Download Product Guide</h6>
+			<h6>Contact Us</h6>
+			<h6>Check Repair Status</h6>
+			<h6>Where To Buy (Computer/Mobile)</h6>
+			<h6>Check Warranty Status</h6>
+			<h6>Find Service Locations</h6>
+			<h6>Driver Download</h6>
+			<h6>ASUS e-Waste Management- Recycle old ASUS products</h6>
+			<h6>Product Registration</h6>
+			<br>
+		</div>
 	</div>
 	<div class="col-md-3">
 		<br><br><br>
-		<h6 style="font-family: 'Merienda One', cursive;">COMMUNITY</h6>
+		<h6 class="ui">COMMUNITY</h6>
 		<a href="https://www.facebook.com/" style="color: blue;font-size: x-large;color: blue;"><i class="fab fa-facebook"></i></a>
 		<a href="https://twitter.com/login" style="font-size: x-large;color: royalblue;"><i class="fab fa-twitter-square"></i></a>
 		<a href="https://www.youtube.com/" style="font-size: x-large; color: red;"><i class="fab fa-youtube"></i></a>
+	
 	</div>
 </div><!--row end-->
 </div><!--container end-->
@@ -211,6 +199,55 @@ font-family: 'Merienda One', cursive;">
 </div><!--footer end-->
 
 
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+<center><p><a href="#top" style="color: deeppink;">^</a>
+</p></center></div>
+</div>
+</div>
+</center>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <script >
+		alert("This is The products page");
+
+		var a = 40;
+		var b =20;
+
+		// if(a>b){
+
+		// 	//alert("A is Greater");
+		// 	alert("Value of A : " + a);
+		// }else{
+
+		// 	//alert ("B is Greater");
+		// 	alert("Value of B : " + b);
+		// }
+  
+
+	</script> -->
+<script type="text/javascript">
+  
+  var preloader=document.getElementById('loading');
+
+  function myFunction(){
+    preloader.style.display= 'none';
+  }
+  
+</script>
 </body>
 </html>

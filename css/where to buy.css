@@ -1,0 +1,28 @@
+*{
+  padding: 0px;
+  margin: 0px;
+ }
+.a{	background-color: #f1048780;
+    color: #6a4747;
+  font-family: 'Merienda One', cursive;}
+  .b{
+  	color: white;
+   font-family: 'Merienda One', cursive;
+  }
+.e{
+	color: deeppink;
+}
+.u{
+	color: deeppink;
+	text-decoration: underline;
+}
+.scrollable{
+    height: 550px;
+    overflow-y: scroll;
+}
+.w{
+  color: white;
+}
+.aa{
+  font-family: 'Merienda One', cursive;
+}

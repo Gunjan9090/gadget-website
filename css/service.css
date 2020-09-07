@@ -1,0 +1,45 @@
+ 
+  
+*{
+  padding: 0px;
+  margin: 0px;
+ }
+#a{
+  color: white;
+}
+.a{ background-color: #f1048780;
+   color: white;
+  font-family: 'Merienda One', cursive;}
+  .b{ margin-top: 25px;
+    color: white;
+   font-family: 'Merienda One', cursive;
+  }
+.e{
+  color: deeppink;
+}
+.u{
+  color: deeppink;
+  text-decoration: underline;
+}
+.scrollable{
+    height: 550px;
+    overflow-y: scroll;
+}
+.z{
+  background-color:black;
+  color: white; 
+}
+.you{
+  background-color:black;
+}
+.m{
+  font-family: 'Merienda One', cursive;
+}
+.qw{
+      line-height: inherit;
+    font-size: medium;
+    font-weight: lighter;
+    font-style: italic;
+    font-weight: lighter;
+
+}

@@ -1,0 +1,43 @@
+ *{
+      padding: 0px;
+    margin: 0px;
+    }
+ 	.a{ font-family: inherit;
+ 		font-style: oblique;
+    font-family: inherit;
+    font-size: x-large;
+    font-weight: 500;
+ 	}
+
+.b{
+	font-size: small;
+    font-family: inherit;"
+}
+.c{
+	color: black;
+
+}
+.d{
+	margin-left: 54px;
+    /* margin-right: 2px; */
+    font-size: small;
+    font-weight: 400;
+    margin-top: -21px;
+}
+.e{
+	    font-size: xx-large;
+    font-family: initial;
+    font-style: oblique;
+    font-weight: 700;
+    color: darkorange;
+
+}
+.f{
+	margin-top: -20px;
+    margin-left: -138px;
+}
+.t{
+	font-family: -webkit-body;
+    font-weight: 800;
+    color: red;
+}

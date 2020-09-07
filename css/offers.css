@@ -1,0 +1,27 @@
+
+*{
+  padding: 0px;
+  margin: 0px;
+ }
+ .a{	background-color: #f1048780;
+    color: #6a4747;
+  font-family: 'Merienda One', cursive;}
+  .b{
+  	color: white;
+   font-family: 'Merienda One', cursive;
+  }
+.e{
+	color: deeppink;
+}
+.u{
+	color: deeppink;
+	text-decoration: underline;
+}
+.i{
+	color:  deeppink;
+	font-family:'Merienda One', cursive; 
+}
+.aa{
+  width: inherit;
+   padding: 5px;
+}
