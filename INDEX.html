@@ -21,16 +21,13 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha38">
 </script>
 <link rel="stylesheet" type="text/css" href="css/asus.css">
-<script>
-	$(document).ready(function(){
-		$('#mymodel').modal('show');
-	});
-</script>
+<!-- <script src="js/index.js"></script> -->
 </head>
-<body onload="myFunction()">
+<body onload="myFunction()" style="background-color: black">
   <div id="loading"></div>
+
 	
-<!-- <! --> -->
+<!--navbar start-->
 <div class="container-fluid" id="top"><!--container fluid start-->
 		<nav class="navbar navbar-expand-sm navbar-dark  fixed-top a"><!-- nav baar start-->
 		<div class="container"><!--container start-->
@@ -298,3 +295,11 @@
 
 </body>
 </html>
+<script type="text/javascript">
+  
+  var preloader=document.getElementById('loading');
+
+  function myFunction(){
+    preloader.style.display= 'none';
+  }
+</script>
